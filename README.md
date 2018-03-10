@@ -1,6 +1,7 @@
 # elementblog
 
 > A Vue.js project
+> Just a sample!
 
 ## Build Setup
 
