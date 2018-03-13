@@ -2,7 +2,7 @@
   <el-container>
     <el-header><headertop></headertop></el-header>
     <el-container>
-      <el-aside width="200px" class="hidden-xs-only">Aside</el-aside>
+      <el-aside width="200px" class="hidden-xs-only"><leftaside></leftaside></el-aside>
       <el-container>
         <el-main>Main</el-main>
         <el-footer>Footer</el-footer>
@@ -13,14 +13,17 @@
 
 <script>
 import headertop from '@/components/header/head'
+import leftaside from '@/page/aside/side'
 export default {
   components: {
-    headertop
+    headertop,
+    leftaside
   }
 }
 </script>
 
 <style scoped>
+@import '../../style/common.css';
 .el-header,
 .el-footer {
   background-color: #B3C0D1;
@@ -28,7 +31,9 @@ export default {
   text-align: center;
   line-height: 60px;
 }
-
+.el-header {
+  background-color: #409EFF;
+}
 .el-aside {
   background-color: #D3DCE6;
   color: #333;
